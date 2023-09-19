@@ -1,3 +1,5 @@
+![Sample Image](https://github.com/imvenx/arcanepad-landing-page-3/blob/main/src/assets/images/screenshot2.png?raw=true)
+
 ![Sample Image](https://github.com/imvenx/arcanepad-landing-page-3/blob/main/src/assets/images/screenshot.png?raw=true)
 
 # Arcanepad (arcanepad-landing-page-3)
