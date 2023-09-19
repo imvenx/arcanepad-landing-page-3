@@ -27,6 +27,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(auto-fill, minmax(1fr, auto));
+  z-index: 2;
 }
 
 #menu>a {

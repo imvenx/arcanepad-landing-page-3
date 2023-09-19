@@ -1,10 +1,12 @@
 <template>
   <div id="cont">
+
     <LogoComp />
     <VideoComp />
     <MenuComp />
 
     <div id="shadow"></div>
+
   </div>
 </template>
 
@@ -26,7 +28,7 @@ import VideoComp from 'components/VideoComp.vue'
   width: 25vw;
   height: 100vh;
   position: absolute;
-  z-index: -1;
+  z-index: 1;
 }
 
 /* #video,

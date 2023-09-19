@@ -26,6 +26,7 @@ function toggleFullScreen() {
   width: 25vw;
   height: 35vh;
   background-color: rgba(0, 0, 0, .8);
+  z-index: 2;
   /* background-image: url('src/assets/images/arcanepad-logo.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -60,7 +61,8 @@ function toggleFullScreen() {
 
 @media (min-width: 600px) and (min-height: 600px) {
   #logo:hover {
-    background-color: rgba(0, 255, 255, 0.114);
+    /* background-color: rgba(0, 255, 255, 0.114); */
+    /* background-color: rgba(0, 100, 100, 0.228); */
   }
 }
 </style>
