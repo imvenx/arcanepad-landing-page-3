@@ -30,7 +30,7 @@ onMounted(() => {
 
   videoEl.value?.addEventListener('canplay', (e) => {
     loadingEl.value!.style.opacity = '0'
-    setTimeout(() => { if (isVideoPlaying) return; playEl.value!.style.opacity = '1' }, 10);
+    setTimeout(() => { if (isVideoPlaying) return; playEl.value!.style.opacity = '1' }, 500);
   })
 })
 
