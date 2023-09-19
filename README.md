@@ -1,3 +1,5 @@
+![Sample Image](https://github.com/imvenx/arcanepad-landing-page-3/raw/main/assets/images/screenshot.png)
+
 # Arcanepad (arcanepad-landing-page-3)
 
 Decyphering ancient technology...
