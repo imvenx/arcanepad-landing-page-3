@@ -1,7 +1,9 @@
 <template>
   <div id="video">
     <video autoplay loop muted disablePictureInPicture>
-      <source src="src/assets/videos/ArcanepadLandingPageVideo.mp4" type="video/mp4">
+      <source
+        src="https://github.com/imvenx/arcanepad-landing-page-3/raw/main/src/assets/videos/ArcanepadLandingPageVideo.mp4"
+        type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
