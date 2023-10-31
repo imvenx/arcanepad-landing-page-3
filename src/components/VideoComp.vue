@@ -43,48 +43,20 @@ function playVideo() {
 
 <style scoped>
 #video {
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  /* z-index: -1; */
+    min-width: 80vw;
+    max-width: 80vw;
+    margin:auto;
 }
 
 #video video {
-  min-width: 100vw;
-  min-height: 100vh;
-  max-height: 105vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* z-index: -1; */
-}
-
-@media (max-width: 600px) and (orientation: portrait) {
-
-  #video {
-    position: relative;
-    width: 100vw;
-    height: 33.33vh;
-    overflow: hidden;
-  }
-
-  #video video {
-    width: 110vw;
-    min-height: 33.33vh;
-    /* border: 5px solid red; */
-  }
-
-}
-
-@media (max-height: 600px) and (orientation: landscape) {
-
-  #video video {
-    height: 100%;
-    position: relative;
-  }
-
+    border-radius:0px;
+    border-width:20px;
+    border-color:#fff;
+    border-style:solid;
+    display:inline-block;
+    border-style:dashed;
+    min-width: 80vw;
+    max-width: 80vw;
 }
 
 #playEl {
@@ -105,17 +77,6 @@ function playVideo() {
   border-left: 9vw solid cyan;
   cursor: pointer;
 }
-
-/* #playBtnCircleCont {
-  width: 15vw;
-  height: 15vw;
-  top: -2.5vw;
-  left: -4vw;
-  box-shadow: 0 0 10px cyan;
-  border-radius: 1000px;
-  position: absolute;
-  border: 5px solid cyan;
-} */
 
 
 #loadingEl {

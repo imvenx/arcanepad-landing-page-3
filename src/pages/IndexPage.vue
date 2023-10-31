@@ -4,9 +4,6 @@
     <LogoComp />
     <VideoComp />
     <MenuComp />
-
-    <div id="shadow"></div>
-
   </div>
 </template>
 
@@ -17,11 +14,6 @@ import VideoComp from 'components/VideoComp.vue'
 </script>
 
 <style scoped>
-#cont {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
 
 #shadow {
   box-shadow: 5px 0px 20px 10px rgb(0, 0, 0);
