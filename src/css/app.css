@@ -3,24 +3,5 @@
 body {
   background-color: black;
   color: rgba(230, 230, 230.5);
-  overflow: hidden;
   text-align: center;
-}
-
-
-a {
-  text-decoration: none;
-  color: cadetblue;
-  font-size: calc(1.4vw + 1.4vh);
-  white-space: nowrap;
-  /* border: 1vh outset rgba(0, 255, 255, 0.242); */
-  /* border-radius: 15px; */
-  /* text-align: center; */
-  vertical-align: middle;
-  font-weight: 1000;
-}
-
-a:hover {
-  background-color: rgba(0, 255, 255, 0.2);
-  color: rgba(0, 255, 255, 0.818);
 }

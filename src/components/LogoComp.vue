@@ -1,9 +1,6 @@
 <template>
   <div id="logo" @click="toggleFullScreen()">
-    <div id="logoTextCont">
-      <div style="text-decoration: none; font-size: 8vh; ">Arcanepad</div>
-      <small style="font-size: 2.5vh;">Decyphering Ancient Technology</small>
-    </div>
+      <small>Decyphering Ancient Technology</small>
   </div>
 </template>
 
@@ -20,49 +17,36 @@ function toggleFullScreen() {
 </script>
 
 <style scoped>
+#logo small {
+    font-weight: 300;
+    color: rgba(0, 255, 255, 0.622);
+    background: linear-gradient(125deg, cyan, fuchsia, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size:1.3rem;
+    margin:20px; 
+    display:inline-block;
+    line-height:1.1;
+}
 #logo {
-  display: flex;
-  flex: 1;
-  width: 25vw;
-  height: 35vh;
-  background-color: rgba(0, 0, 0, .8);
-  z-index: 2;
-  /* background-image: url('src/assets/images/arcanepad-logo.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 50%; */
+  background-image:url("src/assets/images/arcanepadLogo.svg");
+  background-size:200px;
+  background-position:center 60px;
+  background-repeat:no-repeat;
+  background-color:#000;
+  min-height:200px !important;
+  display:block !important;
+  color:#ccc;
 }
 
 #logo:hover {
   cursor: pointer;
 }
 
-#logoTextCont {
-  margin: auto;
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 1000;
-  color: rgba(0, 255, 255, 0.622);
-  background: linear-gradient(125deg, cyan, fuchsia, purple);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-
-@media (max-width: 600px) and (orientation: portrait) {
-
-  #logo {
-    width: 100vw;
-    height: 35vh;
-    background-color: rgba(0, 0, 0, .5);
-  }
-
-}
-
-@media (min-width: 600px) and (min-height: 600px) {
-  #logo:hover {
-    /* background-color: rgba(0, 255, 255, 0.114); */
-    /* background-color: rgba(0, 100, 100, 0.228); */
-  }
+@media (max-width: 600px) {
+    #logo small {
+        font-size:1rem;
+    }
 }
 </style>

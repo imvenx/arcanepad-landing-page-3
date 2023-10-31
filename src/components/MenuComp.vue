@@ -19,28 +19,22 @@
 
 <style scoped>
 #menu {
-  flex: 1.5;
-  width: 25vw;
-  height: 65vh;
-  background-color: rgba(0, 0, 0, .5);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(auto-fill, minmax(1fr, auto));
-  z-index: 2;
+  display:block;
+  margin:20px 30px 20px 20px;
 }
-
-#menu>a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+a {
+  color:#fff;
+  font-size:1rem;
+  line-height:1.6;
+  padding:0;
+  display:block;
+  font-weight:normal;
+  text-decoration:none;
+  display:block;
 }
-
-@media (max-width: 600px) and (orientation: portrait) {
-
-  #menu {
-    width: 100vw;
-    height: 65vh;
-    background-color: rgba(0, 0, 0, .5);
-  }
+a:hover {
+  font-weight:bold;
+  background-color:#000;
+  
 }
 </style>
