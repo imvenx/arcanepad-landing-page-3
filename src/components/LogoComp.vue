@@ -1,9 +1,6 @@
 <template>
   <div id="logo" @click="toggleFullScreen()">
-    <div id="logoTextCont">
-      <div style="text-decoration: none; font-size: 8vh; ">Arcanepad</div>
-      <small style="font-size: 2.5vh;">Decyphering Ancient Technology</small>
-    </div>
+      <small>Decyphering Ancient Technology</small>
   </div>
 </template>
 
@@ -20,49 +17,54 @@ function toggleFullScreen() {
 </script>
 
 <style scoped>
+#logo small {
+    font-weight: 300;
+    color: rgba(0, 255, 255, 0.622);
+    background: linear-gradient(125deg, cyan, fuchsia, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size:0.9rem;
+    display:inline-block;
+    margin:20px;
+    line-height:1.2;
+    text-align:center;
+    width:220px;
+}
 #logo {
-  display: flex;
-  flex: 1;
-  width: 25vw;
-  height: 35vh;
-  background-color: rgba(0, 0, 0, .8);
-  z-index: 2;
-  /* background-image: url('src/assets/images/arcanepad-logo.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 50%; */
+  background-size:170px;
+  background-position:40px 70px;
+  background-repeat:no-repeat;
+  background-image: url("src/assets/images/arcanepadLogo.svg");
+  z-index:999;
+  position:absolute;
+  top:0;
+  min-height:200px;
+  min-width:200px;
 }
 
 #logo:hover {
   cursor: pointer;
 }
 
-#logoTextCont {
-  margin: auto;
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 1000;
-  color: rgba(0, 255, 255, 0.622);
-  background: linear-gradient(125deg, cyan, fuchsia, purple);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-
-@media (max-width: 600px) and (orientation: portrait) {
-
-  #logo {
-    width: 100vw;
-    height: 35vh;
-    background-color: rgba(0, 0, 0, .5);
+@media (max-width: 400px) and (orientation: portrait) {
+#logo {
+    top:auto;
+    background-size:110px;
+    background-position:2vw 30px;
+    width:110px;
+    bottom:0;
+    min-height:130px;
+    text-align:center;
   }
-
-}
-
-@media (min-width: 600px) and (min-height: 600px) {
-  #logo:hover {
-    /* background-color: rgba(0, 255, 255, 0.114); */
-    /* background-color: rgba(0, 100, 100, 0.228); */
+  #logo small {
+    width:80vw;
+    text-align:left;
+    padding:0;
+    left:0;
+    font-size:0.8rem;
+    margin-top:5px;
+    display:inline-block;
   }
 }
 </style>
