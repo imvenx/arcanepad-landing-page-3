@@ -43,28 +43,36 @@ function playVideo() {
 
 <style scoped>
 #video {
-    min-width: 80vw;
-    max-width: 80vw;
-    margin:auto;
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image:  repeating-linear-gradient(45deg, #444cf7 25%, transparent 25%, transparent 75%, #444cf7 75%, #444cf7), repeating-linear-gradient(45deg, #444cf7 25%, #e5e5f7 25%, #e5e5f7 75%, #444cf7 75%, #444cf7);
+    background-position: 0 0, 3px 3px;
+    background-size: 6px 6px;
+    
 }
 
 #video video {
-    border-radius:0px;
-    border-width:20px;
-    border-color:#fff;
-    border-style:solid;
-    display:inline-block;
-    border-style:dashed;
-    min-width: 80vw;
-    max-width: 80vw;
+    min-width: 100vw;
+    min-height: 100vh;
+    font-size:0;
+    line-height:0;
+    transform-oringin: center center;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image:  repeating-linear-gradient(45deg, #444cf7 25%, transparent 25%, transparent 75%, #444cf7 75%, #444cf7), repeating-linear-gradient(45deg, #444cf7 25%, #e5e5f7 25%, #e5e5f7 75%, #444cf7 75%, #444cf7);
+    background-position: 0 0, 3px 3px;
+    background-size: 6px 6px;
 }
 
 #playEl {
   opacity: 0;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
   z-index: 1;
   transition: 1s all;
 }
@@ -81,26 +89,32 @@ function playVideo() {
 
 #loadingEl {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
   transition: 1s all;
   z-index: 1;
 }
 
 #loadingCircle {
-  width: 15vw;
-  height: 15vw;
+  width: 3vw;
+  height: 3vw;
   border: .5vw solid darkcyan;
   border-right: .5vw solid cyan;
   border-radius: 200px;
   animation: 1s rotate linear infinite;
-  box-shadow: 0 0 10px cyan;
 }
 
 @keyframes rotate {
   100% {
     transform: rotate(360deg);
   }
+}
+@media (max-width: 400px) and (orientation: portrait) {
+#video video {
+    min-width: 100vw;
+    min-height: 100vh;
+    margin-left:-70%;
+}
 }
 </style>

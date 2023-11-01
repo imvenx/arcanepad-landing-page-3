@@ -24,29 +24,47 @@ function toggleFullScreen() {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    font-size:1.3rem;
-    margin:20px; 
+    font-size:0.9rem;
     display:inline-block;
-    line-height:1.1;
+    margin:20px;
+    line-height:1.2;
+    text-align:center;
+    width:220px;
 }
 #logo {
-  background-image:url("src/assets/images/arcanepadLogo.svg");
-  background-size:200px;
-  background-position:center 60px;
+  background-size:170px;
+  background-position:40px 70px;
   background-repeat:no-repeat;
-  background-color:#000;
-  min-height:200px !important;
-  display:block !important;
-  color:#ccc;
+  background-image: url("src/assets/images/arcanepadLogo.svg");
+  z-index:999;
+  position:absolute;
+  top:0;
+  min-height:200px;
+  min-width:200px;
 }
 
 #logo:hover {
   cursor: pointer;
 }
 
-@media (max-width: 600px) {
-    #logo small {
-        font-size:1rem;
-    }
+@media (max-width: 400px) and (orientation: portrait) {
+#logo {
+    top:auto;
+    background-size:110px;
+    background-position:2vw 30px;
+    width:110px;
+    bottom:0;
+    min-height:130px;
+    text-align:center;
+  }
+  #logo small {
+    width:80vw;
+    text-align:left;
+    padding:0;
+    left:0;
+    font-size:0.8rem;
+    margin-top:5px;
+    display:inline-block;
+  }
 }
 </style>
