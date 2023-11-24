@@ -16,8 +16,7 @@
 <style scoped>
 #menu {
   flex: 1.5;
-  width: 25vw;
-  height: 65vh;
+  width: 25%;
   background-color: rgba(0, 0, 0, .5);
   display: grid;
   grid-template-columns: 50% 50%;

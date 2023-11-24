@@ -23,8 +23,7 @@ function toggleFullScreen() {
 #logo {
   display: flex;
   flex: 1;
-  width: 25vw;
-  height: 35vh;
+  width: 25%;
   background-color: rgba(0, 0, 0, .8);
   z-index: 2;
   /* background-image: url('src/assets/images/arcanepad-logo.png');
