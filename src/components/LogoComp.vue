@@ -41,7 +41,7 @@ function toggleFullScreen() {
   color: rgba(255, 255, 255, 0.8);
   font-weight: 1000;
   color: rgba(0, 255, 255, 0.622);
-  background: linear-gradient(125deg, cyan, fuchsia, purple);
+  background: linear-gradient(125deg, rgb(10, 216, 216), darkcyan, purple, fuchsia);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
