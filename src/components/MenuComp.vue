@@ -1,5 +1,7 @@
 <template>
   <div id="menu">
+    <q-btn v-if="showPlayArrow" @click="showPlayArrow = false" icon="play_arrow" style="font-size: 4vh; color:cyan" />
+
     <a href="https://imvenx.github.io/arcanedocs/guide/get-started.html" target="_blank"> Download<q-icon
         name="launch" /></a>
     <a href="https://imvenx.github.io/arcanedocs/" target="_blank">Develop <q-icon name="launch" /></a>
@@ -11,6 +13,9 @@
 </template>
 
 <script lang="ts" setup>
+import { ref } from 'vue';
+
+const showPlayArrow = ref(true)
 </script>
 
 <style scoped>

@@ -5,7 +5,7 @@
       </div>
     </div>
     <div @click="playVideo()" ref="playEl" id="playEl">
-      <div id="playButton"></div>
+      <!-- <div id="playButton"></div> -->
       <!-- <div id="playBtnCircleCont">
       </div> -->
     </div>
@@ -31,7 +31,10 @@ onMounted(() => {
     loadingEl.value!.style.opacity = '0'
     setTimeout(() => { if (isVideoPlaying) return; playEl.value!.style.opacity = '1' }, 500);
   })
+
+  window.addEventListener('click', () => playVideo())
 })
+
 
 function playVideo() {
   videoEl.value?.play()
