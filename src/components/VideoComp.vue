@@ -10,7 +10,8 @@
       </div> -->
     </div>
     <video ref="videoEl" autoplay loop muted disablePictureInPicture>
-      <source src="/videos/landing-vid.mp4" type="video/mp4">
+      <source src="https://github.com/imvenx/arcanepad-landing-page-3/raw/main/src/assets/videos/landing-vid.mp4"
+        type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
