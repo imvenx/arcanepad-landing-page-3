@@ -62,7 +62,7 @@ function playVideo() {
 
 @media (max-width: 600px) and (orientation: portrait) {
 
-  #video {
+  /* #video {
     position: relative;
     width: 100%;
     height: 33.33vh;
@@ -72,8 +72,7 @@ function playVideo() {
   #video video {
     width: 110vw;
     min-height: 33.33vh;
-    /* border: 5px solid red; */
-  }
+  } */
 
 }
 

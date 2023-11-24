@@ -21,7 +21,7 @@ function toggleFullScreen() {
 
 <style scoped>
 #arcanepadText {
-  font-size: 10vh;
+  font-size: 8vh;
   text-decoration: underline;
   border: 1px solid rgba(128, 128, 128, 0.334);
   border-radius: 10px;
@@ -76,7 +76,7 @@ function toggleFullScreen() {
 
 @media (min-width: 600px) and (min-height: 600px) {
   #logo:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(0, 0, 0, 0.7); */
   }
 }
 </style>

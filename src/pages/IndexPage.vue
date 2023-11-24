@@ -15,14 +15,15 @@ import VideoComp from 'components/VideoComp.vue'
 
 <style scoped>
 #cont {
-  display: flex;
-  /* grid-template-rows: 35% auto; */
-  /* flex-direction: column; */
+  display: grid;
+  grid-template-rows: 30% auto;
+  flex-direction: column;
   height: 100%;
 }
 
 #shadow {
   box-shadow: 5px 0px 20px 10px rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, .7);
   width: 25%;
   height: 100%;
   position: absolute;
