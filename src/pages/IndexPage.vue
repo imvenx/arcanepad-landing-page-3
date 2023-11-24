@@ -50,7 +50,7 @@ import VideoComp from 'components/VideoComp.vue'
 @media (max-height: 600px) and (orientation: landscape) {
 
   #cont {
-    height: 80vh;
+    height: 100%;
   }
 
   #shadow {

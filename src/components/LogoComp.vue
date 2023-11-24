@@ -1,8 +1,8 @@
 <template>
   <div id="logo" @click="toggleFullScreen()">
     <div id="logoTextCont">
-      <div style="text-decoration: none; font-size: 4rem; ">Arcanepad</div>
-      <!-- <small style="font-size: 1.5rem;">Decyphering Ancient Technology</small> -->
+      <div style="text-decoration: none; font-size: calc(1vw + 7vh); ">Arcanepad</div>
+      <!-- <small style="font-size: 2.5vw;">Decyphering Ancient Technology</small> -->
     </div>
   </div>
 </template>
@@ -41,7 +41,7 @@ function toggleFullScreen() {
   color: rgba(255, 255, 255, 0.8);
   font-weight: 1000;
   color: rgba(0, 255, 255, 0.622);
-  background: linear-gradient(125deg, rgb(10, 216, 216), darkcyan, purple, fuchsia);
+  background: linear-gradient(125deg, rgba(1, 206, 206), fuchsia);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -52,7 +52,7 @@ function toggleFullScreen() {
 
   #logo {
     width: 100%;
-    height: 35vh;
+    /* height: 35%; */
     background-color: rgba(0, 0, 0, .5);
   }
 
