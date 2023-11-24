@@ -52,7 +52,7 @@ function toggleFullScreen() {
 @media (max-width: 600px) and (orientation: portrait) {
 
   #logo {
-    width: 100vw;
+    width: 100%;
     height: 35vh;
     background-color: rgba(0, 0, 0, .5);
   }

@@ -10,9 +10,7 @@
       </div> -->
     </div>
     <video ref="videoEl" autoplay loop muted disablePictureInPicture>
-      <source
-        src="https://github.com/imvenx/arcanepad-landing-page-3/raw/main/src/assets/videos/ArcanepadLandingPageVideo.mp4"
-        type="video/mp4">
+      <source src="/videos/landing-vid.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
@@ -45,15 +43,15 @@ function playVideo() {
 #video {
   position: absolute;
   top: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   /* z-index: -1; */
 }
 
 #video video {
-  min-width: 100vw;
-  min-height: 100vh;
-  max-height: 105vh;
+  min-width: 100%;
+  min-height: 100%;
+  /* max-height: 105vh; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -65,7 +63,7 @@ function playVideo() {
 
   #video {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 33.33vh;
     overflow: hidden;
   }

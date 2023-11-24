@@ -1,12 +1,9 @@
 <template>
   <div id="cont">
-
     <LogoComp />
     <VideoComp />
     <MenuComp />
-
     <div id="shadow"></div>
-
   </div>
 </template>
 
@@ -20,13 +17,13 @@ import VideoComp from 'components/VideoComp.vue'
 #cont {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
 }
 
 #shadow {
   box-shadow: 5px 0px 20px 10px rgb(0, 0, 0);
-  width: 25vw;
-  height: 100vh;
+  width: 25%;
+  height: 100%;
   position: absolute;
   z-index: 1;
 }
@@ -41,7 +38,7 @@ import VideoComp from 'components/VideoComp.vue'
 @media (max-width: 600px) and (orientation: portrait) {
 
   #cont {
-    height: 90vh;
+    /* height: 90vh; */
   }
 
   #shadow {
