@@ -1,8 +1,8 @@
 <template>
   <div id="logo" @click="toggleFullScreen()">
     <div id="logoTextCont">
-      <div style="text-decoration: none; font-size: 8vh; ">Arcanepad</div>
-      <small style="font-size: 2.5vh;">Decyphering Ancient Technology</small>
+      <div style="text-decoration: none; font-size: 4rem; ">Arcanepad</div>
+      <!-- <small style="font-size: 1.5rem;">Decyphering Ancient Technology</small> -->
     </div>
   </div>
 </template>
