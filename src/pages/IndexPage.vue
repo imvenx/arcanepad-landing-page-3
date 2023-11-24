@@ -16,7 +16,8 @@ import VideoComp from 'components/VideoComp.vue'
 <style scoped>
 #cont {
   display: flex;
-  flex-direction: column;
+  /* grid-template-rows: 35% auto; */
+  /* flex-direction: column; */
   height: 100%;
 }
 
@@ -39,6 +40,7 @@ import VideoComp from 'components/VideoComp.vue'
 
   #cont {
     /* height: 90vh; */
+    flex-direction: column;
   }
 
   #shadow {
@@ -50,7 +52,8 @@ import VideoComp from 'components/VideoComp.vue'
 @media (max-height: 600px) and (orientation: landscape) {
 
   #cont {
-    height: 100%;
+    /* height: 100%; */
+    /* display: flex; */
   }
 
   #shadow {

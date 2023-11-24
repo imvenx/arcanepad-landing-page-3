@@ -1,8 +1,8 @@
 <template>
   <div id="logo" @click="toggleFullScreen()">
     <div id="logoTextCont">
-      <div style="text-decoration: none; font-size: calc(1vw + 7vh); ">Arcanepad</div>
-      <!-- <small style="font-size: 2.5vw;">Decyphering Ancient Technology</small> -->
+      <div id="arcanepadText">Arcanepad</div>
+      <!-- <small style="font-size: 2.2vh;">Decyphering Ancient Technology</small> -->
     </div>
   </div>
 </template>
@@ -20,11 +20,22 @@ function toggleFullScreen() {
 </script>
 
 <style scoped>
+#arcanepadText {
+  font-size: 10vh;
+  text-decoration: underline;
+  border: 1px solid rgba(128, 128, 128, 0.334);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.134);
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.826);
+  padding: 2vh;
+}
+
 #logo {
   display: flex;
   flex: 1;
   width: 25%;
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, .5);
+  /* border-right: 1px solid rgba(0, 0, 0, 0.328); */
   z-index: 2;
   /* background-image: url('src/assets/images/arcanepad-logo.png');
   background-repeat: no-repeat;
@@ -50,8 +61,13 @@ function toggleFullScreen() {
 
 @media (max-width: 600px) and (orientation: portrait) {
 
+  #arcanepadText {
+    font-size: 7vh;
+  }
+
   #logo {
     width: 100%;
+
     /* height: 35%; */
     background-color: rgba(0, 0, 0, .5);
   }
@@ -60,8 +76,7 @@ function toggleFullScreen() {
 
 @media (min-width: 600px) and (min-height: 600px) {
   #logo:hover {
-    /* background-color: rgba(0, 255, 255, 0.114); */
-    /* background-color: rgba(0, 100, 100, 0.228); */
+    background-color: rgba(0, 0, 0, 0.7);
   }
 }
 </style>
