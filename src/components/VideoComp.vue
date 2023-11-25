@@ -29,7 +29,8 @@ onMounted(() => {
 
   videoEl.value?.addEventListener('canplay', (e) => {
     loadingEl.value!.style.opacity = '0'
-    setTimeout(() => { if (isVideoPlaying) return; playEl.value!.style.opacity = '1' }, 500);
+    // setTimeout(() => { if (isVideoPlaying) return; playEl.value!.style.opacity = '1' }, 500);
+    setTimeout(() => { if (!isVideoPlaying) window.dispatchEvent(new CustomEvent('videoDontAutoplay')) }, 500);
   })
 
   window.addEventListener('click', () => playVideo())

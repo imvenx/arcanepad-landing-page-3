@@ -2,7 +2,7 @@
   <div id="logo" @click="toggleFullScreen()">
     <div id="logoTextCont">
       <div id="arcanepadText">Arcanepad</div>
-      <!-- <small style="font-size: 2.2vh;">Decyphering Ancient Technology</small> -->
+      <small style="font-size: 3vh;">A new way of playing</small>
     </div>
   </div>
 </template>
@@ -48,6 +48,8 @@ function toggleFullScreen() {
 }
 
 #logoTextCont {
+  gap: .5em;
+  display: grid;
   margin: auto;
   color: rgba(255, 255, 255, 0.8);
   font-weight: 1000;

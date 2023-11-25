@@ -13,9 +13,13 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 
-const showPlayArrow = ref(true)
+const showPlayArrow = ref(false)
+
+onMounted(() => {
+  window.addEventListener('videoDontAutoplay', () => { showPlayArrow.value = true })
+})
 </script>
 
 <style scoped>
