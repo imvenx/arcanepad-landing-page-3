@@ -11,7 +11,7 @@ body {
 a {
   text-decoration: none;
   color: cadetblue;
-  font-size: 2rem;
+  font-size: calc(1vw + 2.8vh);
   white-space: nowrap;
   /* border: 1vh outset rgba(0, 255, 255, 0.242); */
   /* border-radius: 15px; */
