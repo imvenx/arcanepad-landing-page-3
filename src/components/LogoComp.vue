@@ -25,7 +25,7 @@ function toggleFullScreen() {
   text-decoration: underline;
   border: 1px solid rgba(128, 128, 128, 0.334);
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.134);
+  background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.826);
   padding: 2vh;
 }
@@ -34,7 +34,7 @@ function toggleFullScreen() {
   display: flex;
   flex: 1;
   width: 25%;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .6);
   /* border-right: 1px solid rgba(0, 0, 0, 0.328); */
   z-index: 2;
   /* background-image: url('src/assets/images/arcanepad-logo.png');
@@ -71,7 +71,7 @@ function toggleFullScreen() {
     width: 100%;
 
     /* height: 35%; */
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .7);
   }
 
 }
